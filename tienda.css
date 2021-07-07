@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: auto;
+    background: #7AC367;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #b8cf77, #7AC367);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #b8cf77, #7AC367); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.contenedor{
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+    /* background: rosybrown; */
+    width: 70%;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 0px;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas:  "I1  I1"
+                          "I2  I2"
+                          "I3  I3";
+}
+
+.contenedor > div, .contenedor > .box, .contenedor > .box2{
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenedor .box
+{
+    grid-area: I1;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.contenedor .box h1
+{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+.contenedor .box input
+{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.contenedor .box input[type="text"]
+{
+    background: #fff;
+    width:340px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+ .contenedor .box input[type="submit"]
+{
+    position: relative;
+    left: -5px;
+    border-radius: 0 25px 25px 0;
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #ffc872;
+    color: #fff;
+} 
+
+.contenedor .box input[type="submit"]:hover
+{
+    background: #ffe3b3;
+}
+
+
+
+/*Tarjetas*/
+
+.contenedor .box2
+{
+    grid-area: I2;
+    /* background: #FFE3B3; */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contenedor .box3
+{
+    grid-area: I3;
+    /* background: #FFE3B3; */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.contenedor .box3 h2{
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #fff;
+}

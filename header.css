@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ecf0f1;
+    padding-top: 330px;
+    transition: padding-top 0.5s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    background: #31B189;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    z-index: 999;
+}
+
+header h1{
+    font-size: 42px;
+    color: white;
+    line-height: 230px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+header h1 i{
+    font-size: bold;
+    text-transform: uppercase;
+}
+
+header nav{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    width:  100%;
+    background: #FFC872;
+}
+
+header nav a{
+    color: black;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header nav a:hover{
+    background: #FFE3B3;
+    color: #000;
+}
+
+p{
+    margin-bottom: 2rem;
+    line-height: 2;
+    color: black;
+}
+
+.wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section{
+    margin: 10px;
+    padding: 20px;
+    background: #faebd1;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+body.sticky-header{
+    padding-top: 100px;
+}
+
+body.sticky-header header{
+    height: 60px;
+    background: #e88300;
+}
+
+body.sticky-header header h1{
+    transition: scale(0, 0);
+}
